@@ -1,11 +1,14 @@
 import React from 'react';
-import { Button, View, Text } from 'react-native';
+import {View, Text} from 'react-native';
+import { Button } from 'react-native-paper';
 
 export default function DetailsScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View>
       <Text>Details Screen</Text>
-      <Button title="Go back to Home" onPress={() => navigation.navigate('Home')} />
+      <Button mode="contained" onPress={() => navigation.navigate('Home')}>
+        Go to Home
+      </Button>
     </View>
   );
 }
